@@ -1,0 +1,9 @@
+*.wav
+!samples/**/*.wav
+!recipes/normal_mixed_ref.wav
+*.mp3
+*.ckpt
+*.pth
+__pycache__/
+*.log
+.DS_Store

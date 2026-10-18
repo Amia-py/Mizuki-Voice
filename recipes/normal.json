@@ -1,0 +1,39 @@
+{
+  "framework": "GPT-SoVITS",
+  "version": "v4",
+  "t2s_weights": "GPT_weights_v4/mizuki-e1.ckpt",
+  "vits_weights": "SoVITS_weights_v4/mizuki_e2_s5336_l64.pth",
+  "params": {
+    "sample_steps": 128,
+    "top_k": 15,
+    "top_p": 1.0,
+    "temperature": 1.0,
+    "speed_factor": 1.0,
+    "repetition_penalty": 1.35,
+    "text_split_method": "cut5",
+    "seed": 42
+  },
+  "post_processing": "peak normalise to 0.95 only; no denoise (measured to reduce harmonicity 0.903->0.821)",
+  "language": "ja",
+  "name": "mizuki_normal",
+  "intent": "Standard (Kanto) intonation, everyday register",
+  "reference": "recipes/normal_mixed_ref.wav",
+  "reference_components": [
+    {
+      "wav": "cloning_dataset/audio_refs/adult/area3_242_003.wav",
+      "seconds": 4.196,
+      "f0_hz": 331.3,
+      "text": "やっほー。奏も集合場所のファミレスいくところ？"
+    },
+    {
+      "wav": "cloning_dataset/audio_refs/adult/voice_ev_shuffle_63_07_38_20.wav",
+      "seconds": 5.521,
+      "f0_hz": 283.1,
+      "text": "（それでもムーちゃんは本当にカワイくて、お世話もとっても楽しかったな）"
+    }
+  ],
+  "reference_text": "やっほー。奏も集合場所のファミレスいくところ？（それでもムーちゃんは本当にカワイくて、お世話もとっても楽しかったな）",
+  "reference_seconds": 9.72,
+  "measured_f0_hz": "258-302",
+  "note": "Neither single reference worked on every line; the two are concatenated so the model has both contours available."
+}
