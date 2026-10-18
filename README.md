@@ -93,6 +93,11 @@ Two rules came out of this build the hard way and are worth keeping:
 
 ## Licence and disclaimer
 
+Copyright (C) 2026 Amia-py. Licensed under **AGPL-3.0-or-later**; the full text is in [LICENSE](LICENSE).
+
+The scripts and recipes in this repository are the corresponding source for the released weights. If you interact with these weights over a network, AGPL section 13 entitles you to obtain that source — it is this repository.
+
+
 Model weights and sample audio: **AGPL-3.0**, matching GPT-SoVITS.
 
 The character Akiyama Mizuki, the voice recordings, and all related assets belong to SEGA, Colorful Palette and Crypton Future Media. This repository contains a derivative trained on game audio and is published for personal, non-commercial research and fan use. It is not affiliated with or endorsed by any of those companies. Do not use it commercially, and do not present the output as official voice work.

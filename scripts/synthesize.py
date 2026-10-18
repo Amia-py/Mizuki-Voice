@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# Copyright (C) 2026 Amia-py
+# SPDX-License-Identifier: AGPL-3.0-or-later
+#
+# This file is part of the corresponding voice-model release and is free software:
+# you can redistribute it and/or modify it under the terms of the GNU Affero General
+# Public License as published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version. See LICENSE for the full text.
 """Reproduce any of the three Mizuki voices with the settings this repo documents.
 
     python scripts/synthesize.py genki "おつかれさま。今日もなんとか生きてる？"
